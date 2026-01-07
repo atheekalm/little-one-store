@@ -1,6 +1,6 @@
 import { Product } from './types';
 
-export const WHATSAPP_NUMBER = '15550101234'; // Replace with your store's WhatsApp number
+export const WHATSAPP_NUMBER = '94761291315'; // Replace with your store's WhatsApp number
 
 export const PRODUCTS: Product[] = [
   {
