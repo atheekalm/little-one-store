@@ -52,13 +52,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <Link to={`/product/${product.id}`} className="block">
             <h3 className="text-sm font-semibold text-gray-900 hover:text-primary line-clamp-1">{product.name}</h3>
           </Link>
-          <button 
+          {/* <button 
             onClick={() => toggleWishlist(product.id)}
             className={`text-gray-400 hover:text-red-500 transition-colors ${isWishlisted ? 'text-red-500 fill-current' : ''}`}
             aria-label="Add to wishlist"
           >
             <Heart size={18} fill={isWishlisted ? "currentColor" : "none"} />
-          </button>
+          </button> */}
         </div>
         
         <p className="text-xs text-gray-500 mb-2 capitalize">{product.category.replace('-', ' ')} • {product.ageGroup} yr</p>

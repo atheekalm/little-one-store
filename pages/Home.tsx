@@ -22,7 +22,7 @@ export const Home: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in relative z-10">
               <span className="inline-block px-4 py-1.5 bg-white text-primary font-bold rounded-full text-sm shadow-sm mb-2 border border-blue-100">
-                New Collection 2024
+                New Collection {new Date().getFullYear()}
               </span>
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
                 Comfort for your <br />
@@ -55,39 +55,50 @@ export const Home: React.FC = () => {
       </section>
 
       {/* Features */}
-      <section className="py-12 bg-white border-b border-gray-100">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="flex items-center gap-4 p-4 rounded-xl bg-gray-50">
-              <div className="p-3 bg-white rounded-full shadow-sm text-primary">
-                <Truck size={24} />
-              </div>
-              <div>
-                <h3 className="font-bold text-gray-900">Free Shipping</h3>
-                <p className="text-sm text-gray-500">On all orders over $50</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4 p-4 rounded-xl bg-gray-50">
-              <div className="p-3 bg-white rounded-full shadow-sm text-accent">
-                <Star size={24} />
-              </div>
-              <div>
-                <h3 className="font-bold text-gray-900">Premium Quality</h3>
-                <p className="text-sm text-gray-500">100% Organic Cotton</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4 p-4 rounded-xl bg-gray-50">
-              <div className="p-3 bg-white rounded-full shadow-sm text-secondary">
-                <ShieldCheck size={24} />
-              </div>
-              <div>
-                <h3 className="font-bold text-gray-900">Secure Payment</h3>
-                <p className="text-sm text-gray-500">100% Secure Checkout</p>
-              </div>
-            </div>
-          </div>
+     <section className="py-12 bg-white border-b border-gray-100">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <div className="flex items-center gap-4 p-4 rounded-xl bg-gray-50">
+        <div className="p-3 bg-white rounded-full shadow-sm text-primary">
+          <Truck size={24} />
         </div>
-      </section>
+        <div>
+          <h3 className="font-bold text-gray-900">Islandwide Delivery</h3>
+          <p className="text-sm text-gray-500">
+            Cash on Delivery available across Sri Lanka
+          </p>
+        </div>
+      </div>
+
+      <div className="flex items-center gap-4 p-4 rounded-xl bg-gray-50">
+        <div className="p-3 bg-white rounded-full shadow-sm text-accent">
+          <Star size={24} />
+        </div>
+        <div>
+          <h3 className="font-bold text-gray-900">Premium Baby Quality</h3>
+          <p className="text-sm text-gray-500">
+            Soft cotton – safe & comfortable for babies
+          </p>
+        </div>
+      </div>
+
+      <div className="flex items-center gap-4 p-4 rounded-xl bg-gray-50">
+        <div className="p-3 bg-white rounded-full shadow-sm text-secondary">
+          <ShieldCheck size={24} />
+        </div>
+        <div>
+          <h3 className="font-bold text-gray-900">Trusted Seller</h3>
+          <p className="text-sm text-gray-500">
+            Secure ordering & reliable service
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       {/* Featured Products */}
       <section className="py-16 bg-white">

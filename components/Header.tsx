@@ -36,7 +36,7 @@ export const Header: React.FC = () => {
           </nav>
 
           {/* Icons */}
-          <div className="flex items-center space-x-4">
+          {/* <div className="flex items-center space-x-4">
             <Link to="/wishlist" className="relative p-2 text-gray-600 hover:text-primary transition-colors">
               <Heart className="h-6 w-6" />
               {wishlist.length > 0 && (
@@ -48,7 +48,8 @@ export const Header: React.FC = () => {
             <button className="md:hidden p-2 text-gray-600" onClick={toggleMenu}>
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
-          </div>
+          </div> */}
+          <div></div>
         </div>
       </div>
 

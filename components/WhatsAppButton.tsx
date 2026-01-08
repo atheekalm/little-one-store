@@ -23,7 +23,9 @@ export const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
   const message = `Hello! I am interested in buying:
 *${product.name}*
 Price: $${product.price}
-Link: ${productLink}`;
+Link: ${productLink}
+image: ${product.image}
+`;
 
   const encodedMessage = encodeURIComponent(message);
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
