@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useParams } from 'react-router-dom';
-import { Filter, X, ChevronDown, ChevronUp } from 'lucide-react';
+import { Filter, X } from 'lucide-react';
 import SEO from '../components/SEO';
 import ProductCard from '../components/ProductCard';
 import { PRODUCTS, CATEGORIES, AGE_GROUPS, PRODUCT_TYPES } from '../constants';
-import { Product, Category, AgeGroup, ProductType } from '../types';
+import { Category, AgeGroup, ProductType } from '../types';
 
 const Catalog: React.FC = () => {
   const { category: paramCategory, ageGroup: paramAgeGroup } = useParams<{ category?: string, ageGroup?: string }>();
